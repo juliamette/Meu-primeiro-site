@@ -75,6 +75,10 @@ a:hover {
     font-size: 18px;
 }
 
+#btnmobile {
+    display: none;
+}
+
 /* Main */
 
 main{
@@ -230,8 +234,7 @@ footer {
         margin-left: 10px;
     }
     .logo-nav img {
-        width: 30px;
-        height: 30px;
+        display: none;
     }
     nav {
         justify-content: flex-start;
@@ -252,7 +255,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 480px) {
     .logo-nav {
         display: none;
     }
@@ -263,9 +266,11 @@ footer {
         margin: 0;
         margin-left: 5px;
     }
+    
+
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 430px) {
     .footer-list {
         font-size: 8px;
     }
