@@ -1,0 +1,297 @@
+/* Página Inteira */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+
+body {
+    background: #424242;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Norwester', sans-serif;
+    font-size: 50px;
+    color:  #c9c9c9;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Lupa */
+
+.search-box {
+    margin:0;
+    margin-bottom: 80x;
+    margin-left: 350x;
+    background: #eeeeee;
+    height: 50px;
+    width: 500px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-text {
+    background: none;
+    border: 0;
+    font-size: 16px;
+    width: 600px;
+    height: 50px;
+    outline: 0;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.search-button img {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+/* NavBar */
+
+nav {
+    display: flex;
+    align-items: center;
+    background: #5798bd;
+    height: 10vh;
+    justify-content: space-between;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: left;
+    margin-left: 15px;
+}
+
+a {
+    color: #424242;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-left: 10px;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+
+.logo-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.logo-div {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.logo-text {
+    font-family: 'Kumar One', serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+.logo-text a {
+    margin-top: 10px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin-right: 100px;
+}
+
+.nav-list li {
+    font-family: 'Norwester', sans-serif;
+    letter-spacing: 3px;
+    margin-left: 32px;
+    font-size: 18px;
+}
+
+/* Main */
+
+main{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+    'Helvetica Neue', sans-serif;
+    color:  #c9c9c9;
+    text-align: center;
+}
+
+/* Hover Produtos */
+
+main:has(li:hover) li:not(:hover) {
+    opacity: .6;
+    scale: .98;
+}
+
+
+/* Produtos */
+
+.products img {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #000;
+    border-radius: 20%;
+    background: #fff;
+    cursor: pointer;
+}
+
+.products {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.products li {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+h2, p {
+    text-align: center;
+}
+
+
+/* Footer */
+
+
+footer {
+    background: #5798bd;
+    height: 8vh;
+}
+
+.footer-list {
+    width: 1349px;
+    height: 8vh;
+    list-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+    'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: #424242;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.site {
+    margin: 15px;
+}
+
+.copyrigth {
+    margin-top: 15px;
+    margin-left: 590px;
+}
+
+
+@media screen and (max-width: 1030px) {
+    .footer-list{
+        display: block;
+    }
+    .site {
+        margin-bottom: 0;
+    }
+    .copyrigth{
+        margin-left: 15px;
+        margin-top: 0;
+    }
+    .logo-text {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    .nav-list {
+        font-size: small;
+        margin-left: 10px;
+    }
+    .logo-nav img {
+        width: 30px;
+        height: 30px;
+    }
+    nav {
+        justify-content: flex-start;
+    }
+    .nav-list li {
+        margin-left: 20px;
+    }
+    .footer-list {
+        font-size: 10px;
+    }
+    .copyrigth, .site {
+        margin: 0;
+        margin-left: 5px;
+    }
+    .search-box {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .logo-nav {
+        display: none;
+    }
+    .footer-list {
+        font-size: 8px;
+    }
+    .copyrigth, .site {
+        margin: 0;
+        margin-left: 5px;
+    } .search-box {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .footer-list {
+        font-size: 8px;
+    }
+    .copyrigth, .site {
+        margin: 0;
+        margin-left: 5px;
+    }
+    nav {
+        height: 25vh;
+    }
+    .nav-list {
+        display: block;
+        margin-top: 8px;
+    }
+    .nav-list li {
+        margin-top: 8;
+        margin-bottom: 8px;
+    }
+    .search-box {
+        width: 150px;
+    }
+    .search-box input{
+        width: 100px;
+    }
+    .search-box img {
+        display: none;
+    }
+    .products li {
+        margin: 0px;
+        margin-top: 10px;
+    }
+}
