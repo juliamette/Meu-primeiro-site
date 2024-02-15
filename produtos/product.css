@@ -140,7 +140,6 @@ main{
 
 main:has(li:hover) li:not(:hover) {
     opacity: .6;
-    scale: .98;
 }
 
 
@@ -169,7 +168,11 @@ main:has(li:hover) li:not(:hover) {
     margin-left: 30px;
 }
 
-h2, p {
+.products  p {
+    display: none;
+}
+
+h2 {
     text-align: center;
 }
 
