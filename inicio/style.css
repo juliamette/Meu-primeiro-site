@@ -9,7 +9,7 @@
 /* NavBar */
 
 nav {
-    max-width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     background: #78ceff;
@@ -173,35 +173,20 @@ footer {
     justify-content: center;
 }
 
-
-
-@media screen and (max-width: 1170px) {
-    .text-1 {
-        width: 85vw;
+@media screen and (max-width:1260px) {
+    .my-image {
+        width: 100%;
+        display: table;
     }
-    .image {
-        float: none;
-        display: block;
+    
+    .card-1, .card-2, .card-3, .card-4, .card-5, .card-5, .card-6 {
+        width: 80%;
     }
-    .image img {
-        margin: 0;
-        margin-top: 30px;
-    }
-   
 }
 
+
 @media screen and (max-width: 1030px) {
-    .footer-list{
-        display: block;
-    }
-    .site {
-        margin-bottom: 0;
-    }
-    .copyrigth{
-        margin-left: 15px;
-        margin-top: 0;
-    }
-    .logo-text {
+      .logo-text {
         display: none;
     }
 }
@@ -223,14 +208,6 @@ footer {
     .footer-list {
         font-size: 10px;
     }
-    .copyrigth, .site {
-        margin: 0;
-        margin-left: 5px;
-    }
-    .image img {
-        width: 280px;
-        height: 280px;
-    }
 }
 
 @media screen and (max-width: 480px) {
@@ -239,22 +216,12 @@ footer {
     }
     .footer-list {
         font-size: 8px;
-    }
-    .copyrigth, .site {
-        margin: 0;
-        margin-left: 5px;
-    }
-    
-
+    }  
 }
 
 @media screen and (max-width: 430px) {
     .footer-list {
         font-size: 8px;
-    }
-    .copyrigth, .site {
-        margin: 0;
-        margin-left: 5px;
     }
     nav {
         height: 25vh;
@@ -267,18 +234,13 @@ footer {
         margin-top: 8;
         margin-bottom: 8px;
     }
-    .text-1 {
-        margin-left: 8px;
+    .card-1, .card-2, .card-3, .card-4, .card-5, .card-5, .card-6 {
+        width: 70%;
+        font-size: 0.8em;
     }
-    .text-2  p {
-        margin: 0;
-        font-size: 12px;
-    }
-    .text-2 li {
-        font-size: 12px;
-    }
-    .content {
-        margin: 0;
-        padding: 0;
+    .image img {
+        margin-top: 50px;
+        width: 200px;
+        height: 180px;
     }
 }

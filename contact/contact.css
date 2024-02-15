@@ -182,16 +182,6 @@ footer {
 
 
 @media screen and (max-width: 1030px) {
-    .footer-list{
-        display: block;
-    }
-    .site {
-        margin-bottom: 0;
-    }
-    .copyrigth{
-        margin-left: 15px;
-        margin-top: 0;
-    }
     .logo-text {
         display: none;
     }
@@ -215,10 +205,7 @@ footer {
     .footer-list {
         font-size: 10px;
     }
-    .copyrigth, .site {
-        margin: 0;
-        margin-left: 5px;
-    }
+
 }
 
 @media screen and (max-width: 470px) {
@@ -228,19 +215,11 @@ footer {
     .footer-list {
         font-size: 8px;
     }
-    .copyrigth, .site {
-        margin: 0;
-        margin-left: 5px;
-    }
 }
 
 @media screen and (max-width: 390px) {
     .footer-list {
         font-size: 8px;
-    }
-    .copyrigth, .site {
-        margin: 0;
-        margin-left: 5px;
     }
     nav {
         height: 25vh;
