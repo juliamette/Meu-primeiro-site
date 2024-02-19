@@ -1,3 +1,11 @@
+//Menu Hamburguer
+const hamburguer = document.querySelector(".hamburguer");
+
+const nav = document.querySelector(".nav-list");
+
+hamburguer.addEventListener('click', () => nav.classList.toggle("active"));
+
+//Produtos
 const filterElement = document.querySelector('header input')
 
 const products = document.querySelectorAll('.allproducts li')

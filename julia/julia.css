@@ -67,6 +67,24 @@ a:hover {
     font-size: 18px;
 }
 
+.hamburguer {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 4.55px solid #424242;
+    cursor: pointer;
+    width: 50px;
+}
+
+.hamburguer::before, .hamburguer::after {
+    content: " ";
+    display: block;
+    width: 50px;
+    height: 4.55px;
+    background: #424242;
+    margin-top: 5px;
+}
+
 /* Body */
 
 body {
@@ -155,96 +173,79 @@ footer {
     justify-content: center;
 }
 
-@media screen and (max-width: 1290px) {
+@media screen and (max-width: 1260px) {
+    .my-image {
+        width: 100%;
+        display: table;
+    }
+    .card-1, .card-2, .card-3, .card-4, .card-5 {
+        width: 80%;
+    }
     .image {
-        display: block;
-        float: none; 
-    }
-    .image img {
-        margin: 0;
-        margin-top: 30px;
-    }
-    .text-2, .text-1 {
-        width: 85vw;
+        text-align: center;
     }
 }
 
 @media screen and (max-width: 1030px) {
-    .footer-list{
-        display: block;
-    }
-    .site {
-        margin-bottom: 0;
-    }
-    .copyrigth{
-        margin-left: 15px;
-        margin-top: 0;
-    }
     .logo-text {
         display: none;
     }
 }
 
 @media screen and (max-width: 615px) {
+    .hamburguer {
+        display: block;
+        margin-right: 20px;
+        z-index: 1;
+    }
     .nav-list {
-        font-size: small;
-        margin-left: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #78ceff;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        transition: 1s ease-out;
+        clip-path: circle(100px at 90% -15%);
+        pointer-events: none;
     }
-    .logo-nav img {
-        width: 30px;
-        height: 30px;
+     .nav-list.active {
+        clip-path: circle(1600px at 90% -15%);
+        pointer-events: all;
     }
-    nav {
-        justify-content: flex-start;
-    }
-    .nav-list li {
-        margin-left: 20px;
+    .nav-list.active a {
+        font-size: 50px;
     }
     .footer-list {
         font-size: 10px;
     }
-    .copyrigth, .site {
-        margin: 0;
-        margin-left: 5px;
+}
+
+@media screen and (max-width: 480px) {
+    .nav-list.active a {
+        font-size: 30px;
+    }
+    .footer-list {
+        font-size: 8px;
+    }
+  
+}
+
+@media screen and (max-width: 430px) {
+    .footer-list {
+        font-size: 8px;
+    }
+    .card-1, .card-2, .card-3, .card-4, .card-5 {
+        width: 70%;
+        font-size: 0.8em;
     }
     .image img {
-        width: 280px;
-        height: 280px;
-    }
-    
-
-}
-
-@media screen and (max-width: 470px) {
-    .logo-nav {
-        display: none;
-    }
-    .footer-list {
-        font-size: 8px;
-    }
-    .copyrigth, .site {
-        margin: 0;
-        margin-left: 5px;
-    }
-}
-
-@media screen and (max-width: 390px) {
-    .footer-list {
-        font-size: 8px;
-    }
-    .copyrigth, .site {
-        margin: 0;
-        margin-left: 5px;
-    }
-    nav {
-        height: 25vh;
-    }
-    .nav-list {
-        display: block;
-        margin-top: 8px;
-    }
-    .nav-list li {
-        margin-top: 8;
-        margin-bottom: 8px;
+        margin-top: 50px;
+        width: 200px;
+        height: 200px;
     }
 }
